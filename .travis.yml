@@ -81,13 +81,14 @@ branches:
     # release tags
     - /^\d+\.\d+\.\d+.*$/
     - master
+    - travis
 
 addons:
   apt:
     packages:
+      - libssl-dev
       - libxmu-dev
-      - openssl
-      - zlibc
+      - pkg-config
 
 notifications:
   email:
